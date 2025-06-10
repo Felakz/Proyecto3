@@ -1,0 +1,220 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f0f7; /* Light blue-gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50 !important; /* Dark blue-gray */
+    border-bottom: 3px solid #3498db; /* Blue accent */
+}
+
+.navbar-brand {
+    color: #ecf0f1 !important; /* Light text */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .bi {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: #3498db; /* Blue icon */
+}
+
+.navbar-nav .nav-link {
+    color: #ecf0f1 !important; /* Light text */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #3498db !important; /* Blue on hover/active */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control.me-2 {
+    border-radius: 20px; /* Rounded search input */
+    border: 1px solid #555;
+    background-color: #3f51b5; /* Slightly lighter dark blue */
+    color: #ecf0f1;
+}
+
+.form-control.me-2::placeholder {
+    color: #bbb;
+}
+
+.btn-outline-light {
+    border-color: #3498db;
+    color: #3498db;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.form-select-sm {
+    background-color: #3f51b5;
+    color: #ecf0f1;
+    border-color: #555;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu-dark {
+    background-color: #34495e; /* Slightly lighter dark blue for dropdowns */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu-dark .dropdown-item {
+    color: #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: #3498db; /* Blue on hover */
+    color: #fff;
+}
+
+/* Main Content Area */
+#main-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+h5 {
+    color: #2c3e50; /* Dark blue for headings */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Buttons within cards */
+.card .btn-primary {
+    background-color: #3498db; /* Blue button */
+    border-color: #3498db;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    border-color: #2980b9;
+}
+
+.btn-sm {
+    padding: 5px 12px;
+    font-size: 0.875rem;
+}
+
+/* Profile Card */
+.card img.rounded-circle {
+    border: 3px solid #3498db; /* Blue border for profile pic */
+    object-fit: cover;
+}
+
+#profile-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#profile-username {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Post Form */
+#publish-form textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    resize: vertical;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #3498db; /* Blue header */
+    color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 15px 20px;
+}
+
+.modal-header .btn-close {
+    filter: invert(1); /* White close button */
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.modal-footer {
+    border-top: 1px solid #eee;
+    padding: 15px 20px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #95a5a6; /* Gray for secondary button */
+    border-color: #95a5a6;
+    border-radius: 8px;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+/* Form Validation Feedback */
+.invalid-feedback {
+    font-size: 0.875rem;
+    color: #e74c3c; /* Red for error messages */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50 !important; /* Dark blue-gray */
+    color: #ecf0f1;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 3px solid #3498db; /* Blue accent */
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}

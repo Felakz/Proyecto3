@@ -1,0 +1,20 @@
+package com.avance3.Proyecto3.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+public class FormularioController {
+
+    @GetMapping("/")
+    public String mostrarFormulario() {
+        return "formulario";
+    }
+
+    @PostMapping("/resultado")
+    public String mostrarResultado(@RequestParam("codigo") String codigo, Model model) {
+        model.addAttribute("codigo", codigo);
+        return "formResultado";
+    }
+}
